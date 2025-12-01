@@ -4,6 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>A Tiny, Cute Note</title>
+
+<!-- Added Google Font for better readability on all devices -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
   body{
     margin:0;
@@ -12,7 +18,7 @@
     justify-content:center;
     height:100vh;
     background:#ffecf4;
-    font-family:'Comic Sans MS', cursive;
+    font-family:'Poppins', sans-serif;
     padding:20px;
     text-align:center;
     overflow:hidden;
@@ -51,8 +57,6 @@
   .heart-deco:nth-child(1) { top: 15%; left: 10%; }
   .heart-deco:nth-child(2) { top: 70%; right: 15%; animation-delay: 2s; }
   .heart-deco:nth-child(3) { top: 40%; left: 85%; animation-delay: 4s; }
-
-  /* NEW HEARTS ADDED */
   .heart-deco:nth-child(4) { top: 10%; left: 50%; animation-delay: 1s; }
   .heart-deco:nth-child(5) { top: 80%; left: 30%; animation-delay: 3s; }
   .heart-deco:nth-child(6) { top: 25%; right: 30%; animation-delay: 5s; }
@@ -99,6 +103,7 @@
     opacity:0;
     transform:scale(0.8);
     transition: opacity 1s ease, transform 1s ease;
+    font-family:'Poppins', sans-serif;
   }
   .letter.visible {
     opacity: 1;
@@ -111,7 +116,7 @@
     border-radius:20px;
     cursor:pointer;
     font-size:18px;
-    font-family:'Comic Sans MS', cursive;
+    font-family:'Poppins', sans-serif;
     font-weight:bold;
     border:3px solid transparent;
     transition:0.3s ease;
@@ -141,6 +146,7 @@
     font-weight: 900;
     margin-bottom: 15px;
     color: #ff76a2;
+    font-family:'Poppins', sans-serif;
   }
 
   .modal-overlay {
@@ -167,6 +173,7 @@
     width:450px;
     max-width:90%;
     text-align:left;
+    font-family:'Poppins', sans-serif;
   }
   .modal-content pre{
     background:#f7f7f7;
@@ -174,6 +181,7 @@
     border-radius:10px;
     font-size:14px;
     white-space: pre-wrap;
+    font-family:'Poppins', sans-serif;
   }
 </style>
 </head>
@@ -182,8 +190,6 @@
 <div class="heart-deco"></div>
 <div class="heart-deco"></div>
 <div class="heart-deco"></div>
-
-<!-- NEW HEARTS ADDED -->
 <div class="heart-deco"></div>
 <div class="heart-deco"></div>
 <div class="heart-deco"></div>
@@ -204,9 +210,7 @@ If I'm on your mind
 I don't wanna fall in love alone
       </pre>
 
-      <!-- ADDED CONTINUE BUTTON ONLY -->
       <button class="next" onclick="continueNo()">Continue</button>
-
       <button class="back" onclick="backFromModal()">Back</button>
   </div>
 </div>
